@@ -13,6 +13,12 @@ import java.util.Map;
  */
 public class RomanNumeralReduction {
 
+    public static void main(String[] args) {
+        System.out.println(romanNumeralReduction("LLLXXXVVVV")); // CC
+        System.out.println(romanNumeralReduction("CC"));         // CC
+        System.out.println(romanNumeralReduction("XIIIII"));     // XV
+    }
+
     public static String romanNumeralReduction(String str) {
 
         int totalArabicValue = 0;
@@ -45,11 +51,5 @@ public class RomanNumeralReduction {
 
     private static Map<Character, Integer> romanToArabic() {
         return Map.of('M', 1000, 'D', 500, 'C', 100, 'L', 50, 'X', 10, 'V', 5, 'I', 1);
-    }
-
-    public static void main(String[] args) {
-        System.out.println(romanNumeralReduction("LLLXXXVVVV")); // CC
-        System.out.println(romanNumeralReduction("CC"));         // CC
-        System.out.println(romanNumeralReduction("XIIIII"));     // XV
     }
 }
