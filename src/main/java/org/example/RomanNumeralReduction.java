@@ -52,5 +52,4 @@ public class RomanNumeralReduction {
         System.out.println(romanNumeralReduction("CC"));         // CC
         System.out.println(romanNumeralReduction("XIIIII"));     // XV
     }
-
 }
