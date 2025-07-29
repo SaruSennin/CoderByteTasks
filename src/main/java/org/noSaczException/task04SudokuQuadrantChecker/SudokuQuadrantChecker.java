@@ -40,6 +40,7 @@ import java.util.*;
  * then your program should return
  * 3,4,5,9.
  */
+
 public class SudokuQuadrantChecker {
 
     public static void main(String[] args) {
